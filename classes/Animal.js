@@ -16,6 +16,13 @@ class Animal {
     #nome
     #especie
 
+    get nome() {
+        return this.#nome;
+    }
+    get especie() {
+        return this.#especie;
+    }
+
     comer() {
         return `O ${this.#nome} está alimentado.`
     }
@@ -29,7 +36,6 @@ class Animal {
     }
 }
 
+export { Animal };
 
 
-const leao = new Animal("Leão", "mamífero");
-console.log(leao);
